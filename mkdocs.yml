@@ -1,0 +1,62 @@
+site_name: CTF Writeups
+site_description: CTF challenge writeups & security notes
+site_author: jp.takapon
+site_url: https://takaho9.github.io/ctf_writeups/
+repo_url: https://github.com/takaho9/ctf_writeups
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードへ
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードへ
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang: ja
+  - tags
+
+nav:
+  - Home: index.md
+  - Notes:
+      - notes/index.md
+  - Tags: tags.md
+  - picoCTF:
+      - Web:
+          - SSTI1: picoctf/web/ssti1.md
+          - Crack the Gate 1: picoctf/web/crack-the-gate-1.md
+          - n0s4n1ty 1: picoctf/web/n0s4n1ty-1.md

@@ -1,3 +1,13 @@
+---
+tags:
+  - Web
+  - Information Disclosure
+  - HTTP Header
+  - picoCTF
+---
+
+# Crack the Gate 1
+
 ## 問題
 We’re in the middle of an investigation. One of our persons of interest, ctf player, is believed to be hiding sensitive data inside a restricted web portal. We’ve uncovered the email address he uses to log in: ctf-player@picoctf.org. Unfortunately, we don’t know the password, and the usual guessing techniques haven’t worked. But something feels off... it’s almost like the developer left a secret way in. Can you figure it out?
 
@@ -27,4 +37,4 @@ NOTE: Jack - temporary bypass: use header "X-Dev-Access: yes"
 ```
 
 ヘッダー修正して再送信した
-![devtoolのスクショ](./Screenshot%20from%202026-07-08%2003-27-11.png)
+![devtoolのスクショ](images/crack-the-gate-1-01.png)

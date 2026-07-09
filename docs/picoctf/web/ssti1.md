@@ -1,3 +1,14 @@
+---
+tags:
+  - Web
+  - SSTI
+  - Jinja2
+  - RCE
+  - picoCTF
+---
+
+# SSTI1
+
 ## 問題
 
 リンク: [https://learn.cylabacademy.org/library/492](https://learn.cylabacademy.org/library/492)
